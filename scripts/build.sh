@@ -19,5 +19,12 @@ while [[ "$#" -gt 0 ]]; do
         echo "Chrome Extension Packed"
         exit 0
         ;;
+        --all)
+        cd ../src/firefox
+        zip -r ../../dist/firefox.zip ./*
+        echo "Firefox Extension Packed"
+        cd ../chrome
+        zip -r ../../dist/chrome.zip ./*
+        echo "Chrome Extension Packed"
     esac
 done
