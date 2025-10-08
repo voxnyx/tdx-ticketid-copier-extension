@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "TDX Easy Ticket ID",
+    "version": "1.0",
+    "author": "Voxnyx (Alexis Emerson)",
+    "description": "Simple tool to quickly copy a Team Dynamix (TDX) ticket id as a link to your clipboard.",
+    "permissions": ["activeTab", "webNavigation", "clipboardWrite"],
+    "background": { "service_worker": "background.js" },
+    "action": {
+        "default_title": "Copy TDX Ticket Link",
+        "default_icon": "icons/TDX_ID_COPY_ICON_48px.png"
+    },
+    "content_scripts": [
+        {
+        "js": ["content.js"],
+        "run_at": "document_idle"
+        }
+    ]
+}

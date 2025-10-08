@@ -1,7 +1,7 @@
 let icons = {
-    default: { path: "icons/TDX_ID_COPY_ICON_48px.png" },
-    success: { path: "icons/checkmark.png" },
-    error: { path: "icons/error.png" }
+    default: { path: { "48": "icons/TDX_ID_COPY_ICON_48px.png" } },
+    success: { path: { "48": "icons/checkmark.png" } },
+    error: { path: { "48": "icons/error.png" } }
 }
 
 // Verifies if current page is a TDX page. 

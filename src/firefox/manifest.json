@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "TDX Copy Rich Ticket ID",
+    "name": "TDX Easy Ticket ID",
     "version": "1.0",
     "author": "Voxnyx (Alexis Emerson)",
 
@@ -14,7 +14,7 @@
     },
     "browser_action": {
         "default_title": "Copy Ticket ID",
-        "default_icon": "icons/TDX_ID_COPY_ICON_48px.png"
+        "default_icon": { "48": "icons/TDX_ID_COPY_ICON_48px.png"}
     },
     "permissions": ["activeTab", "clipboardWrite", "webNavigation"]
 }
